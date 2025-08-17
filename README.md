@@ -1,14 +1,16 @@
-# Ecowatt — Versión Azul (estructura OK 2)
+# Ecowatt – Sitio estático base
 
-✅ Incluye TODAS las carpetas para que solo cargues:
-- **Video:** `public/video/hero.mp4`  (minúsculas)
-- **Fotos de áreas:** `public/images/areas/<area>/1.jpg` .. `4.jpg`
+Este ZIP contiene la **estructura completa** para subir a GitHub Pages o cualquier hosting estático.
+Incluye:
+- Carpeta para **video del héroe** (`assets/hero/`).
+- Carpetas para **imágenes por área** (`assets/areas/`).
+- Logos de **partners** con sus links configurables en `data/partners.json`.
+- Logo Ecowatt en `assets/logo/`.
 
-Carpetas de áreas creadas:
-- `aguas`, `efluentes-urbanos`, `industriales-bioenergia`, `aire-gases`, `equipos`
+## Cómo usar
+1. Copiar el video del héroe como `assets/hero/hero.mp4` (opcional `assets/hero/poster.jpg`).
+2. Crear una carpeta por cada área en `assets/areas/` y colocar imágenes.
+3. Editar `data/areas.json` con los nombres de las carpetas e imágenes.
+4. **Mantener los links de partners** actualizando `data/partners.json` con sus URLs finales.
+5. Publicar.
 
-Incluye (si disponibles): logo de Ecowatt y logos de partners con enlaces.
-
-## Netlify (sitio plano)
-- Build command: (vacío)
-- Publish directory: `/`

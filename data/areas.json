@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "aguas",
+    "title": "Aguas",
+    "description": "Captación, potabilización y reúso con foco en eficiencia y calidad. • Potabilización y reúso • Balance hídrico • Monitoreo de calidad",
+    "images": []
+  },
+  {
+    "slug": "efluentes-urbanos",
+    "title": "Efluentes urbanos",
+    "description": "Tratamiento municipal estable, cumplimiento y costos controlados. • Lodos activados, MBBR, SBR • Desinfección y olores • Optimización de OPEX",
+    "images": []
+  },
+  {
+    "slug": "efluentes-industriales-bioenergia",
+    "title": "Efluentes industriales y bioenergía",
+    "description": "Tratamientos FQ y biológicos por industria. Digestión anaerobia para biogás. • FQ, aerobio y anaerobio • Valorización por biogás • Mejora de performance",
+    "images": []
+  },
+  {
+    "slug": "aire-gases",
+    "title": "Aire y gases",
+    "description": "Abatimiento de VOCs y olores. Captura, biofiltración y adsorción. • Lavadores, carbón, biofiltros • Ventilación y seguridad • Emisiones normadas",
+    "images": []
+  },
+  {
+    "slug": "equipamiento-electromecanico",
+    "title": "Equipamiento electromecánico",
+    "description": "Selección, provisión y mantenimiento de equipos críticos con soporte técnico. • Bombas, soplantes, rejas • Tableros e instrumentación • Servicio y repuestos",
+    "images": []
+  }
+]

@@ -1,166 +1,89 @@
-
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Ecowatt — Opción Azul</title>
-  <meta name="description" content="Soluciones en tratamiento de aguas, efluentes y aire.">
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecowatt | Ingeniería Ambiental</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Ecowatt Ingeniería Ambiental">
 </head>
-<body>
-
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="#top" aria-label="Ecowatt">
-      <img src="public/images/logo/logo-ecowatt.png" alt="Ecowatt" />
-    </a>
-    <nav>
-      <a href="#areas">Áreas</a>
-      <a href="#partners">Alianzas</a>
-      <a href="#contacto">Contacto</a>
+<body class="bg-white text-slate-800">
+  <header class="max-w-7xl mx-auto px-4 py-6 flex items-center gap-4">
+    <img src="assets/logo/logo-ecowatt.png" alt="Ecowatt" class="h-10 w-auto">
+    <nav class="ml-auto hidden md:flex gap-6">
+      <a href="#areas" class="hover:underline">Áreas</a>
+      <a href="#partners" class="hover:underline">Partners</a>
+      <a href="#contacto" class="hover:underline">Contacto</a>
     </nav>
-  </div>
-</header>
+  </header>
 
-<section class="hero" id="top">
-  <video autoplay muted loop playsinline>
-    <source src="public/video/hero.mp4" type="video/mp4" />
-  </video>
-  <div class="overlay"></div>
-  <div class="container content">
-    <h1>Ingeniería ambiental para un uso eficiente del agua</h1>
-    <p>Diseño, operación y optimización de plantas. Reúso y eficiencia de recursos.</p>
-  </div>
-</section>
+  <!-- Hero -->
+  <section class="relative max-w-7xl mx-auto px-4">
+    <div class="rounded-2xl overflow-hidden shadow">
+      <video class="w-full h-[420px] object-cover" autoplay muted loop playsinline poster="assets/hero/poster.jpg">
+        <source src="assets/hero/hero.mp4" type="video/mp4">
+        Tu navegador no soporta video HTML5.
+      </video>
+    </div>
+  </section>
 
-<section class="areas" id="areas">
-  <article class="row">
-    <div class="band-blue" style="display:flex;align-items:center;justify-content:center;padding:36px;">
-      <div style="max-width:560px;color:#fff">
-        <h3>Aguas</h3>
-        <p>Captación, potabilización y reúso con foco en eficiencia y calidad.</p>
-      </div>
-    </div>
-    <div class="media">
-      <div class="gallery">
-        <div class="main"><img src="" alt="Aguas principal"></div>
-        <div class="thumbs">
-          <img src="public/images/areas/aguas/1.jpg" alt="Aguas 1">
-          <img src="public/images/areas/aguas/2.jpg" alt="Aguas 2">
-          <img src="public/images/areas/aguas/3.jpg" alt="Aguas 3">
-        </div>
-      </div>
-    </div>
-  </article>
+  <!-- Áreas -->
+  <section id="areas" class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-3xl font-semibold mb-6">Áreas</h2>
+    <div id="areas-grid" class="grid md:grid-cols-3 gap-6"></div>
+  </section>
 
-  <article class="row">
-    <div class="media">
-      <div class="gallery">
-        <div class="main"><img src="" alt="Urbanos principal"></div>
-        <div class="thumbs">
-          <img src="public/images/areas/efluentes-urbanos/1.jpg" alt="Urbanos 1">
-          <img src="public/images/areas/efluentes-urbanos/2.jpg" alt="Urbanos 2">
-          <img src="public/images/areas/efluentes-urbanos/3.jpg" alt="Urbanos 3">
-        </div>
-      </div>
+  <!-- Partners -->
+  <section id="partners" class="bg-slate-50 border-t">
+    <div class="max-w-7xl mx-auto px-4 py-10">
+      <h2 class="text-3xl font-semibold mb-6">Partners</h2>
+      <div id="partners-logos" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6 items-center"></div>
     </div>
-    <div class="band-gray" style="display:flex;align-items:center;justify-content:center;padding:36px;">
-      <div style="max-width:560px;">
-        <h3>Efluentes urbanos</h3>
-        <p>Tratamiento municipal estable, cumplimiento y costos controlados.</p>
-      </div>
-    </div>
-  </article>
+  </section>
 
-  <article class="row">
-    <div class="band-green" style="display:flex;align-items:center;justify-content:center;padding:36px;">
-      <div style="max-width:560px;">
-        <h3>Efluentes industriales y bioenergía</h3>
-        <p>Tratamientos FQ y biológicos por industria. Digestión anaerobia para biogás.</p>
-      </div>
+  <!-- Contacto -->
+  <footer id="contacto" class="border-t">
+    <div class="max-w-7xl mx-auto px-4 py-10 text-sm text-slate-500">
+      © <span id="year"></span> Ecowatt. Todos los derechos reservados.
     </div>
-    <div class="media">
-      <div class="gallery">
-        <div class="main"><img src="" alt="Industriales principal"></div>
-        <div class="thumbs">
-          <img src="public/images/areas/industriales-bioenergia/1.jpg" alt="Industriales 1">
-          <img src="public/images/areas/industriales-bioenergia/2.jpg" alt="Industriales 2">
-          <img src="public/images/areas/industriales-bioenergia/3.jpg" alt="Industriales 3">
-        </div>
-      </div>
-    </div>
-  </article>
+  </footer>
 
-  <article class="row">
-    <div class="media">
-      <div class="gallery">
-        <div class="main"><img src="" alt="Aire principal"></div>
-        <div class="thumbs">
-          <img src="public/images/areas/aire-gases/1.jpg" alt="Aire 1">
-          <img src="public/images/areas/aire-gases/2.jpg" alt="Aire 2">
-          <img src="public/images/areas/aire-gases/3.jpg" alt="Aire 3">
-        </div>
-      </div>
-    </div>
-    <div class="band-gray" style="display:flex;align-items:center;justify-content:center;padding:36px;">
-      <div style="max-width:560px;">
-        <h3>Aire y gases</h3>
-        <p>Abatimiento de VOCs y olores. Captura, biofiltración y adsorción.</p>
-      </div>
-    </div>
-  </article>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-  <article class="row">
-    <div class="band-blue" style="display:flex;align-items:center;justify-content:center;padding:36px;">
-      <div style="max-width:560px;color:#fff">
-        <h3>Equipamiento electromecánico</h3>
-        <p>Selección, provisión y mantenimiento de equipos críticos con soporte técnico.</p>
-      </div>
-    </div>
-    <div class="media">
-      <div class="gallery">
-        <div class="main"><img src="" alt="Equipos principal"></div>
-        <div class="thumbs">
-          <img src="public/images/areas/equipos/1.jpg" alt="Equipos 1">
-          <img src="public/images/areas/equipos/2.jpg" alt="Equipos 2">
-          <img src="public/images/areas/equipos/3.jpg" alt="Equipos 3">
-        </div>
-      </div>
-    </div>
-  </article>
-</section>
+    // Render Áreas
+    fetch('data/areas.json').then(r => r.json()).then(areas => {
+      const grid = document.getElementById('areas-grid');
+      areas.forEach(a => {
+        const firstImg = a.images && a.images.length ? a.images[0] : null;
+        const card = document.createElement('article');
+        card.className = 'rounded-2xl overflow-hidden border shadow-sm hover:shadow transition';
+        card.innerHTML = `
+          <div class="h-40 bg-slate-200 overflow-hidden">
+            ${firstImg ? `<img src="${firstImg}" alt="${a.title}" class="w-full h-full object-cover">` : ''}
+          </div>
+          <div class="p-5">
+            <h3 class="text-xl font-semibold mb-2">${a.title}</h3>
+            <p class="text-sm text-slate-600">${a.description || ''}</p>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    });
 
-<section class="partners" id="partners">
-  <div class="container">
-    <h2>Alianzas estratégicas</h2>
-    <ul>
-      <li><a href="https://2gservicos.com/" target="_blank" rel="noopener"><img src="public/images/partners/2g.png" alt="2G"></a></li>
-      <li><a href="https://www.fuchswater.com/es/" target="_blank" rel="noopener"><img src="public/images/partners/fuchs.png" alt="FUCHS"></a></li>
-      <li><a href="https://aircleansrl.com/" target="_blank" rel="noopener"><img src="public/images/partners/airclean.png" alt="AirClean"></a></li>
-      <li><a href="https://dagaequipment.com/es/" target="_blank" rel="noopener"><img src="public/images/partners/daga.png" alt="Daga"></a></li>
-      <li><a href="https://aqana.com/" target="_blank" rel="noopener"><img src="public/images/partners/aqana.png" alt="AQANA"></a></li>
-    </ul>
-  </div>
-</section>
-
-<section class="contact" id="contacto">
-  <div class="container">
-    <h2>Contacto</h2>
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="hidden" name="form-name" value="contact"/>
-      <label>Nombre<br><input type="text" name="nombre" required></label><br><br>
-      <label>Email<br><input type="email" name="email" required></label><br><br>
-      <label>Mensaje<br><textarea name="mensaje" rows="5" required></textarea></label><br><br>
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="container"><p>© <span id="y"></span> Ecowatt. Ingeniería Ambiental.</p></div>
-</footer>
-
-<script src="js/main.js"></script>
+    // Render Partners (mantener links desde data/partners.json)
+    fetch('data/partners.json').then(r => r.json()).then(list => {
+      const wrap = document.getElementById('partners-logos');
+      list.forEach(p => {
+        const a = document.createElement('a');
+        a.href = p.url || '#';
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.className = 'flex items-center justify-center p-4 bg-white rounded-xl border hover:shadow';
+        a.innerHTML = `<img src="${p.logo}" alt="${p.name}" class="max-h-12 object-contain">`;
+        wrap.appendChild(a);
+      });
+    });
+  </script>
 </body>
 </html>
